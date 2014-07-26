@@ -112,8 +112,8 @@
 
     <java.version>1.6</java.version>
     <sbt.project.name>spark</sbt.project.name>
-    <scala.version>2.10.4</scala.version>
-    <scala.binary.version>2.10</scala.binary.version>
+    <scala.version>2.11.2</scala.version>
+    <scala.binary.version>2.11</scala.binary.version>
     <scala.macros.version>2.0.1</scala.macros.version>
     <mesos.version>0.18.1</mesos.version>
     <mesos.classifier>shaded-protobuf</mesos.classifier>
@@ -783,7 +783,7 @@
         <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>3.1.6</version>
+          <version>3.2.0</version>
           <executions>
             <execution>
               <id>scala-compile-first</id>
