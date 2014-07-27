@@ -411,8 +411,8 @@ case class BroadcastHashJoin(
     UnspecifiedDistribution :: UnspecifiedDistribution :: Nil
 
   @transient
-  lazy val broadcastFuture = future {
-    sparkContext.broadcast(buildPlan.executeCollect())
+  lazy val broadcastFuture = Future {
+    sqlContext.sparkContext.broadcast(buildPlan.executeCollect())
   }
 
   def execute() = {
